@@ -1,4 +1,5 @@
 var rain = prompt("How many inches of rain fell?");
+// this creates the string to symbolize how many inches of rain with the * character
 let s = "*".repeat(rain);
 console.log("Rain:", s);
 
@@ -18,4 +19,5 @@ if (fertilizer === "yes") {
     bushels = bushels + bushels * 0.1;
   }
 }
+
 console.log(`The yield should be ${bushels} bushels per acre.`);
