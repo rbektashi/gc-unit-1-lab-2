@@ -1,6 +1,6 @@
 var rain = prompt("How many inches of rain fell?");
 let s = "*".repeat(rain);
-console.log("rain", s);
+console.log("Rain:", s);
 
 let bushels = 50;
 if (rain >= 20) {
