@@ -11,6 +11,11 @@ if (rain >= 20) {
 
 var fertilizer = prompt("Did you use fertilizer");
 if (fertilizer === "yes") {
-  var fertlizerType = prompt(" Did you use premium or regular fertilizer?");
-  console.log(fertlizerType);
+  var fertlizerType = prompt("Did you use premium or regular fertilizer?");
+  if (fertlizerType === "premium") {
+    bushels = bushels + bushels * 0.15;
+  } else if (fertlizerType === "regular") {
+    bushels = bushels + bushels * 0.1;
+  }
 }
+console.log(`The yield should be ${bushels} bushels per acre.`);
